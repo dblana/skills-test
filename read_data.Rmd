@@ -1,0 +1,28 @@
+---
+title: "data-cleaning"
+author: "DBlana"
+date: "14/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+```{r load-packages}
+
+library(tidyverse)
+library(here)
+
+```
+
+## Read in our data
+
+```{r read-data}
+
+admissions <- read_csv(here("hospital_admissions.csv"))
+
+```
+
